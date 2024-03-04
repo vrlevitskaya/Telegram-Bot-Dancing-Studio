@@ -233,7 +233,7 @@ def handle_text(message):
         if selected_users_list:
             bot.send_message(message.chat.id, f'Вы выбрали следующих пользователей: {", ".join(selected_users_list)}')
         else:
-            bot.send_message(message.chat.id, 'Вы не выбрали ни одного пользователя.')
+            bot.send_message(message.chat.id, 'Вы не выбрали ни одного пользователя :(.')
     else:
         bot.send_message(message.chat.id, 'Пожалуйста, используйте кнопки для выбора пользователей.')
 

@@ -3,7 +3,7 @@ import datetime
 
 
 def add_payment_to_csv(payment_info, month):
-    payments_df = pd.read_csv('payments/тест.csv')  # f'payments/{month}_платежи.csv'
+    payments_df = pd.read_csv('payments/тест.csv')  # f'payments/{month}_платежи.csv для прода'
     df_row = pd.DataFrame([payment_info])
     payments_df = pd.concat([payments_df, df_row], ignore_index=True)
     payments_df.to_csv('payments/тест.csv', index=False)
